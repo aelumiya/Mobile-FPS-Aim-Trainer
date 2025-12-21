@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://3mc3ondm2uxb"]
+
+[ext_resource type="Script" uid="uid://hh3avdsnjuyj" path="res://target.gd" id="1_t2jmu"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_3hr3o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3hr3o"]
+albedo_color = Color(0, 1, 1, 1)
+roughness = 0.7
+emission_enabled = true
+emission = Color(0, 1, 1, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t2jmu"]
+
+[node name="StaticBody3D" type="StaticBody3D" groups=["target"]]
+script = ExtResource("1_t2jmu")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_3hr3o")
+surface_material_override/0 = SubResource("StandardMaterial3D_3hr3o")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_t2jmu")

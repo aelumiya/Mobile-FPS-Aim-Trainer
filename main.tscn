@@ -1,0 +1,232 @@
+[gd_scene load_steps=12 format=3 uid="uid://bufmw2750qyj4"]
+
+[ext_resource type="Script" uid="uid://burcmg8i0cgjk" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://3mc3ondm2uxb" path="res://target.tscn" id="1_ig7tw"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0xm2m"]
+
+[sub_resource type="Sky" id="Sky_0xm2m"]
+sky_material = SubResource("ProceduralSkyMaterial_0xm2m")
+
+[sub_resource type="Environment" id="Environment_7dm0k"]
+background_mode = 1
+background_color = Color(0.39215687, 0.39215687, 0.39215687, 1)
+sky = SubResource("Sky_0xm2m")
+ambient_light_source = 2
+ambient_light_color = Color(0.5294118, 0.80784315, 0.92156863, 1)
+glow_enabled = true
+glow_intensity = 0.6
+glow_strength = 0.6
+glow_bloom = 0.15
+
+[sub_resource type="FontFile" id="FontFile_0xm2m"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/27/0/ascent = 0.0
+cache/0/27/0/descent = 0.0
+cache/0/27/0/underline_position = 0.0
+cache/0/27/0/underline_thickness = 0.0
+cache/0/27/0/scale = 1.0
+cache/0/28/0/ascent = 0.0
+cache/0/28/0/descent = 0.0
+cache/0/28/0/underline_position = 0.0
+cache/0/28/0/underline_thickness = 0.0
+cache/0/28/0/scale = 1.0
+cache/0/29/0/ascent = 0.0
+cache/0/29/0/descent = 0.0
+cache/0/29/0/underline_position = 0.0
+cache/0/29/0/underline_thickness = 0.0
+cache/0/29/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/31/0/ascent = 0.0
+cache/0/31/0/descent = 0.0
+cache/0/31/0/underline_position = 0.0
+cache/0/31/0/underline_thickness = 0.0
+cache/0/31/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/33/0/ascent = 0.0
+cache/0/33/0/descent = 0.0
+cache/0/33/0/underline_position = 0.0
+cache/0/33/0/underline_thickness = 0.0
+cache/0/33/0/scale = 1.0
+cache/0/34/0/ascent = 0.0
+cache/0/34/0/descent = 0.0
+cache/0/34/0/underline_position = 0.0
+cache/0/34/0/underline_thickness = 0.0
+cache/0/34/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/37/0/ascent = 0.0
+cache/0/37/0/descent = 0.0
+cache/0/37/0/underline_position = 0.0
+cache/0/37/0/underline_thickness = 0.0
+cache/0/37/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
+font = SubResource("FontFile_0xm2m")
+font_size = 35
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0xm2m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2yge"]
+albedo_color = Color(0.15686275, 0.15686275, 0.15686275, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_h2yge"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bvp3"]
+cull_mode = 2
+albedo_color = Color(0.5294118, 0.80784315, 0.92156863, 1)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_0xm2m")
+target_scene = ExtResource("1_ig7tw")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.9848077, 0.17364818, 0, -0.17364818, 0.9848077, 0, 1.5, 4)
+current = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7dm0k")
+
+[node name="Targets" type="Node3D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="UI"]
+custom_minimum_size = Vector2(20, 20)
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TimerLabel" type="Label" parent="UI"]
+custom_minimum_size = Vector2(0, 20)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+
+[node name="AccuracyLabel" type="Label" parent="UI"]
+custom_minimum_size = Vector2(-20, 20)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+
+[node name="Crosshair" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CS" type="Label" parent="UI/Crosshair"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "+"
+label_settings = SubResource("LabelSettings_h2yge")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EndScreen" type="ColorRect" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.78039217)
+
+[node name="EndBox" type="VBoxContainer" parent="UI/EndScreen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -108.5
+offset_right = 128.0
+offset_bottom = 108.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="UI/EndScreen/EndBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Time Up"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FinalScoreLabel" type="Label" parent="UI/EndScreen/EndBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FinalAccLabel" type="Label" parent="UI/EndScreen/EndBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Accuracy: 100 %"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("PlaneMesh_0xm2m")
+surface_material_override/0 = SubResource("StandardMaterial3D_h2yge")
+
+[node name="ceiling" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, -10, -8.742278e-07, 0, 8.742278e-07, -10, 0, 3, 0)
+mesh = SubResource("PlaneMesh_h2yge")
+surface_material_override/0 = SubResource("StandardMaterial3D_1bvp3")
