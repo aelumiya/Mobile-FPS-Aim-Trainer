@@ -5,6 +5,8 @@ This project focuses on core FPS aim-training mechanics with clean visuals and m
 
 The goal of this project is learning, experimentation, and building a solid technical foundation for FPS-style aim trainers.
 
+![alt text](https://github.com/DevStrikerTech/Mobile-FPS-Aim-Trainer/blob/main/aim_trainer.gif?raw=true)
+
 ---
 
 ## 🎯 Project Overview
