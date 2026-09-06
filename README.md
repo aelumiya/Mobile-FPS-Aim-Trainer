@@ -157,7 +157,7 @@ The visuals are intentionally minimal to emphasize mechanics and performance.
 
 ## 📄 License
 
-Free to use, modify, and learn from.
+MIT
 
 ---
 
